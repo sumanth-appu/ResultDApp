@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ResultDapp</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>ResultDapp</h1>
+  <div id="content">
+    <div>
+      <h2>Add Batch</h2>
+      <input type="text" id="batchId" placeholder="Batch ID">
+      <input type="text" id="studentRecordsRoot" placeholder="Student Records Root">
+      <input type="text" id="ipfsHash" placeholder="IPFS Hash">
+      <button id="addBatch">Add Batch</button>
+    </div>
+    <div>
+      <h2>Get Batch</h2>
+      <input type="text" id="getBatchId" placeholder="Batch ID">
+      <button id="getBatch">Get Batch</button>
+      <pre id="batchDetails"></pre>
+    </div>
+  </div>
+  <script src="../node_modules/web3/dist/web3.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
